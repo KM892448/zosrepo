@@ -1,17 +1,18 @@
-//REXEXC00 JOB (10640000),'DR2G BET3 INST',CLASS=B,                     00010002
-//         MSGCLASS=X,MSGLEVEL=(1,1),REGION=0M,                         00020002
-//*        RESTART=DSNTIST,                                             00030002
-//         TIME=1440,NOTIFY=&SYSUID                                     00040002
-/*JOBPARM S=CA31                                                        00041002
-//**********************************************************************00050000
-//**********************************************************************00051002
-//REXJ     EXEC PGM=IKJEFT01,DYNAMNBR=45                                00060000
-//SYSPROC  DD DISP=SHR,DSN=KM892448.AUTOTEST                            00070001
-//SYSTSPRT DD SYSOUT=*                                                  00080000
-//SYSTSIN  DD *                                                         00090000
-%SMPREX00                                                               00100000
-//*                                                                     00110000
-//IDCAMS   EXEC PGM=IDCAMS,COND=(0,NE,REXJ)                             00120000
-//SYSPRINT DD SYSOUT=*                                                  00130000
-//SYSOUT   DD SYSOUT=*                                                  00140000
-//SYSIN    DD *                                                         00150000
+//PRANJALI  JOB (10640000),'D10C DB2V11 INST',CLASS=B,                  00010001
+//         MSGCLASS=X,MSGLEVEL=(1,1),REGION=0M,                         00020001
+//         TIME=1440,NOTIFY=&SYSUID                                     00021001
+//**********************************************************************00030000
+//**********************************************************************00040000
+//REXJ     EXEC PGM=IKJEFT01,DYNAMNBR=45                                00050000
+//SYSPROC  DD DISP=SHR,DSN=KM892448.AUTOTEST                            00060000
+//SYSTSPRT DD SYSOUT=*                                                  00070000
+//SYSTSIN  DD *                                                         00080000
+%SMPREX00                                                               00090000
+//*                                                                     00100000
+//IDCAMS   EXEC PGM=IDCAMS,COND=(0,NE,REXJ)                             00110000
+//SYSPRINT DD SYSOUT=*                                                  00120000
+//SYSOUT   DD SYSOUT=*                                                  00130000
+//SYSIN    DD *                                                         00140000
+SET MAXCC=1                                                             00150000
+//*                                                                     00160000
+//                                                                      00170000

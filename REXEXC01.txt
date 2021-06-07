@@ -1,14 +1,12 @@
-//REXEXC01 JOB (10640000),'DR2G BET3 INST',CLASS=B,                     00010000
+//PRANJALI  JOB (10640000),'D10C DB2V11 INST',CLASS=B,                  00010000
 //         MSGCLASS=X,MSGLEVEL=(1,1),REGION=0M,                         00020000
-//*        RESTART=DSNTIST,                                             00030000
-//         TIME=1440,NOTIFY=&SYSUID                                     00040000
-/*JOBPARM S=CA31                                                        00050000
-//**********************************************************************00060000
-//**********************************************************************00070000
-//REXJ     EXEC PGM=IKJEFT01,DYNAMNBR=45                                00080000
-//SYSPROC  DD DISP=SHR,DSN=KM892448.AUTOTEST                            00090000
-//SYSTSPRT DD SYSOUT=*                                                  00100000
-//SYSTSIN  DD *                                                         00110000
-%SMPREX01                                                               00120000
-//*                                                                     00130000
-//                                                                      00140000
+//         TIME=1440,NOTIFY=&SYSUID                                     00021000
+//**********************************************************************00022000
+//**********************************************************************00023000
+//REXJ     EXEC PGM=IKJEFT01,DYNAMNBR=45                                00024000
+//SYSPROC  DD DISP=SHR,DSN=KM892448.AUTOTEST                            00025000
+//SYSTSPRT DD SYSOUT=*                                                  00026000
+//SYSTSIN  DD *                                                         00027000
+%SMPREX01                                                               00028000
+//*                                                                     00029001
+//                                                                      00030001
